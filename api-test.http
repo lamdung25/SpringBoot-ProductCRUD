@@ -1,0 +1,31 @@
+
+### 1. GET - Lấy tất cả sản phẩm
+GET http://localhost:8080/api/products
+
+### 2. GET - Lấy sản phẩm theo ID
+GET http://localhost:8080/api/products/2
+
+
+### 3. POST - Thêm sản phẩm
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "San pham test DELETE",
+  "price": 10000,
+  "description": "Du lieu thu nghiem de xoa"
+}
+
+
+### 4. PUT - Cập nhật sản phẩm
+PUT http://localhost:8080/api/products/2
+Content-Type: application/json
+
+{
+  "name": "Ban phim Logitech K120 RGB",
+  "price": 250000,
+  "description": "Ban phim da cap nhat"
+}
+
+### 5. DELETE - Xóa sản phẩm
+DELETE http://localhost:8080/api/products/4
